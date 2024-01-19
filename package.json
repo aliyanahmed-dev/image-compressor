@@ -1,0 +1,71 @@
+{
+  "name": "image-compressor",
+  "productName": "image-compressor-app",
+  "version": "1.0.0",
+  "description": "Image Compressor App",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "build": "electron-builder",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "build": {
+    "appId": "com.example.practiceapp",
+    "productName": "ImageCompressor",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/index.js",
+      "build/**/*"
+    ],
+    "extraFiles": [
+      {
+        "from": "css",
+        "to": "css"
+      },
+      {
+        "from": "assets",
+        "to": "assets"
+      },
+      {
+        "from": "js",
+        "to": "js"
+      },
+      {
+        "from": "images",
+        "to": "images"
+      }
+    ],
+    "mac": {
+      "icon": "assets/icons/mac/icon.icns"
+    },
+    "win": {
+      "icon": "assets/icons/win/icon.ico"
+    },
+    "linux": {
+      "icon": "assets/icons/linux/icon.ico"
+    }
+  },
+  "keywords": [],
+  "author": "Aliyan Ahmed",
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.35.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "mkdirp": "^3.0.1",
+    "resize-img": "^2.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "electron": "28.1.4"
+  }
+}

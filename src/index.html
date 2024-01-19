@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Image Compressor</title>
+  </head>
+  <body class="bg-dark">
+    <div
+      class="max-w-xl m-auto h-screen flex flex-col align-center justify-center"
+    >
+      <div class="flex flex-col w-full items-center justify-center bg-grey-lighter">
+        <label
+          class="text-center w-64 flex flex-col items-center px-4 py-7 bg-white text-gray-500 rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:text-teal-800"
+        >
+          <img src="./images/logo.svg" width="32" />
+          <span class="mt-2 leading-normal">Select images to Compress</span>
+          <input id="img" type="file" class="hidden" multiple/>
+        </label>
+      </div>
+
+
+    </div>
+  </body>
+</html>
